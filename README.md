@@ -2,10 +2,11 @@
 ###### Simple Android app built to modernize the way players keep records while playing popular card games (Baloot, Bint Speet, Kam Takel, and Trix)
 
 ## Screenshots
-![nashra main](https://user-images.githubusercontent.com/37724969/48052311-6c98e380-e15c-11e8-8c6a-0ab5a020afd4.png)
-![nashra baloot](https://user-images.githubusercontent.com/37724969/48052317-702c6a80-e15c-11e8-9816-4e3bcfc78939.png)
-![nashra bint speet](https://user-images.githubusercontent.com/37724969/48052319-71f62e00-e15c-11e8-8e81-dd020ad8ed90.png)
-
+<p>
+  <img src="https://user-images.githubusercontent.com/37724969/48052311-6c98e380-e15c-11e8-8c6a-0ab5a020afd4.png" width="250" title="nashra main">
+  <img src="https://user-images.githubusercontent.com/37724969/48052317-702c6a80-e15c-11e8-9816-4e3bcfc78939.png" width="250" alt="nashra baloot">
+  <img src="https://user-images.githubusercontent.com/37724969/48052319-71f62e00-e15c-11e8-8e81-dd020ad8ed90.png" width="250" alt="nashra bint speet">
+</p>
 
 ## Baloot features:
 - Keeps record of all games registered during the round
