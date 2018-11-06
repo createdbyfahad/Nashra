@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Nashra</string>
+    <string name="baloot">Baloot</string>
+    <string name="bint">Bint Speet</string>
+    <string name="trix">Trix</string>
+    <string name="kamTakel">Kam Takel</string>
+    <string name="us">Us</string>
+    <string name="them">Them</string>
+    <string name="nashra_baloot">Nashra Baloot</string>
+    <string name="change_game">Change Game</string>
+    <string name="welcome_sentence">Welcome to Calculator</string>
+    <string name="register">Register</string>
+    <string name="next">Next</string>
+    <string name="newGame">New Game?</string>
+    <string name="reviewGame">Review last game</string>
+    <string name="gameIsDone">Game is done</string>
+    <string name="gameIsDraw">Game is Draw</string>
+    <string name="weWonGame">We won the Game</string>
+    <string name="themWonGame">They won the Game</string>
+    <string name="players_num">How many players</string>
+    <string name="four_players">Four players</string>
+    <string name="five_players">Five Players</string>
+    <string name="player1">player 1</string>
+    <string name="player2">player 2</string>
+    <string name="player3">player 3</string>
+    <string name="player4">player 4</string>
+    <string name="player5">player 5</string>
+    <string name="has_won">Won</string>
+    <string name="nashra_bint">Nashra Bint</string>
+    <string name="change_player_name">Change PLayer Name</string>
+    <string name="edit_last_score">Edit Last Score</string>
+</resources>

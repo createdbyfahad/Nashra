@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">نشره</string>
+    <string name="baloot">بلوت</string>
+    <string name="bint">بنت سبيت</string>
+    <string name="kamTakel">كم تاكل</string>
+    <string name="trix">تريكس</string>
+    <string name="them">لهم</string>
+    <string name="us">لنا</string>
+    <string name="nashra_baloot">نشرة بلوت</string>
+    <string name="change_game">تغيير اللعبة</string>
+    <string name="welcome_sentence">مرحبا, نشرة لأي لعبة؟</string>
+    <string name="register">سجل</string>
+    <string name="next">التالي</string>
+    <string name="gameIsDone">"انتهت الصكة بفارق "</string>
+    <string name="newGame">صكة جديدة؟</string>
+    <string name="reviewGame">مراجعة النتائج</string>
+    <string name="gameIsDraw">انتهت الصكة بالتعادل</string>
+    <string name="themWonGame">حظ اوفر. الفريق الاخر فاز</string>
+    <string name="weWonGame">مبرووك! فزتوا بالصكة</string>
+    <string name="players_num">عدد اللاعبين</string>
+    <string name="five_players">خمسة لاعبين</string>
+    <string name="four_players">اربعة لاعبين</string>
+    <string name="player1">لاعب 1</string>
+    <string name="player2">لاعب 2</string>
+    <string name="player3">لاعب 3</string>
+    <string name="player4">لاعب 4</string>
+    <string name="player5">لاعب 5</string>
+    <string name="has_won">فاز</string>
+    <string name="nashra_bint">نشرة بنت السبيت</string>
+    <string name="change_player_name">تغيير اسم اللعبا</string>
+    <string name="edit_last_score">تعديل</string>
+</resources>

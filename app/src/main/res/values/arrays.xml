@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="four_five_players">
+        <item>@string/four_players</item>
+        <item>@string/five_players</item>
+    </string-array>
+</resources>

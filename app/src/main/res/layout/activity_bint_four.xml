@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/inside_bgcolor"
+    tools:context="com.example.fahad.nashra.BalootActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp">
+
+    <include layout="@layout/keypad_c"></include>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription=""
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bint_icn"
+        tools:ignore="RtlHardcoded" />
+
+    <Button
+        android:id="@+id/change_game_btn"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        android:ems="10"
+        android:inputType="none"
+        android:onClick="returnBack"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:text="@string/change_game"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/bint_acc"
+        android:textIsSelectable="false"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="88dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:background="@color/bg_acc"
+        android:ems="10"
+        android:inputType="none"
+        android:onClick="newGame"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:text="@string/newGame"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/bint_acc"
+        android:textIsSelectable="false"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/change_game_btn"
+        app:layout_constraintLeft_toRightOf="@+id/change_game_btn"
+        tools:ignore="RtlHardcoded" />
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="88dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        android:ems="10"
+        android:inputType="none"
+        android:onClick="registerResult"
+        android:selectAllOnFocus="false"
+        android:singleLine="true"
+        android:text="@string/register"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/bint_acc"
+        android:textIsSelectable="false"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player3Enter" />
+
+    <TextView
+        android:id="@+id/player4Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="changeName"
+        android:text="@string/player4"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/player1Text"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/secondGuideline" />
+
+    <TextView
+        android:id="@+id/player4Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:padding="3dp"
+        android:text="0"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/player1Score"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/secondGuideline" />
+
+    <EditText
+        android:id="@+id/player4Enter"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/bint_acc"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="none"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:selectAllOnFocus="false"
+        android:singleLine="true"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/background_dark"
+        android:textIsSelectable="true"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/secondGuideline"
+        app:layout_constraintTop_toTopOf="@+id/divideVertical" />
+
+    <TextView
+        android:id="@+id/player3Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="changeName"
+        android:text="@string/player3"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/player1Text"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintLeft_toLeftOf="@+id/secondGuideline"
+        app:layout_constraintRight_toLeftOf="@+id/thirdGuideline" />
+
+    <TextView
+        android:id="@+id/player3Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:padding="3dp"
+        android:text="0"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/player1Score"
+        app:layout_constraintLeft_toLeftOf="@+id/secondGuideline"
+        app:layout_constraintRight_toLeftOf="@+id/thirdGuideline" />
+
+    <EditText
+        android:id="@+id/player3Enter"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/bint_acc"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="none"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:selectAllOnFocus="false"
+        android:singleLine="true"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/background_dark"
+        android:textIsSelectable="true"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="@+id/secondGuideline"
+        app:layout_constraintRight_toLeftOf="@+id/thirdGuideline"
+        app:layout_constraintTop_toTopOf="@+id/divideVertical" />
+
+    <TextView
+        android:id="@+id/player2Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="changeName"
+        android:text="@string/player2"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/player1Text"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintLeft_toLeftOf="@+id/thirdGuideline"
+        app:layout_constraintRight_toLeftOf="@+id/lastGuideline" />
+
+    <TextView
+        android:id="@+id/player2Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:padding="3dp"
+        android:text="0"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/player1Score"
+        app:layout_constraintLeft_toLeftOf="@+id/thirdGuideline"
+        app:layout_constraintRight_toLeftOf="@+id/lastGuideline" />
+
+    <EditText
+        android:id="@+id/player2Enter"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/bint_acc"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="none"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:selectAllOnFocus="false"
+        android:singleLine="true"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/background_dark"
+        android:textIsSelectable="true"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="@+id/thirdGuideline"
+        app:layout_constraintRight_toLeftOf="@+id/lastGuideline"
+        app:layout_constraintTop_toTopOf="@+id/divideVertical" />
+
+
+    <TextView
+        android:id="@+id/gameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/nashra_bint"
+        android:textSize="18sp"
+        app:layout_constraintRight_toLeftOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/player1Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="changeName"
+        android:text="@string/player1"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintLeft_toLeftOf="@+id/lastGuideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameTitle" />
+
+    <TextView
+        android:id="@+id/player1Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:padding="3dp"
+        android:text="0"
+        android:textAppearance="@android:style/TextAppearance.Material.Small"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="@+id/lastGuideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player1Text" />
+
+    <EditText
+        android:id="@+id/player1Enter"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/bint_acc"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="none"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:selectAllOnFocus="false"
+        android:singleLine="true"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/background_dark"
+        android:textIsSelectable="true"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="@+id/lastGuideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/divideVertical" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/divideVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/kamt_acc"
+        app:layout_constraintBottom_toTopOf="@+id/divideVertical"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player1Score"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.75" />
+
+            <View
+                style="@style/Divider"
+                android:layout_marginTop="8dp"
+                app:layout_constraintLeft_toLeftOf="@+id/guideline6" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <View
+                style="@style/Divider"
+                android:layout_marginTop="8dp"
+                app:layout_constraintLeft_toLeftOf="@+id/guideline7" />
+
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.25" />
+
+            <View
+                style="@style/Divider"
+                android:layout_marginTop="8dp"
+                app:layout_constraintLeft_toLeftOf="@+id/guideline5" />
+
+            <LinearLayout
+                android:id="@+id/player4Board"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical"
+                android:textDirection="ltr"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/guideline5"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/lastRecord4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-/0"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/record_typo" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/player3Board"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical"
+                android:textDirection="ltr"
+                app:layout_constraintLeft_toLeftOf="@+id/guideline5"
+                app:layout_constraintRight_toLeftOf="@+id/guideline7"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/lastRecord3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-/0"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/record_typo" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/player2Board"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical"
+                android:textDirection="ltr"
+                app:layout_constraintLeft_toLeftOf="@+id/guideline7"
+                app:layout_constraintRight_toLeftOf="@+id/guideline6"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/lastRecord2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-/0"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/record_typo" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/player1Board"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical"
+                android:textDirection="ltr"
+                app:layout_constraintLeft_toLeftOf="@+id/guideline6"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/lastRecord1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-/0"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/record_typo" />
+
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/secondGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/thirdGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/lastGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+</android.support.constraint.ConstraintLayout>

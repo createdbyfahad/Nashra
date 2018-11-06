@@ -1,0 +1,228 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="@layout/activity_bint_five"
+    android:id="@+id/keyboard"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:stretchColumns="0,1,2"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/register_btn"
+    app:layout_constraintVertical_bias="0.0"
+    android:layoutDirection="rtl">
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/calc_3_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/keypad_press"
+            android:onClick="calcClick"
+            android:text="3"
+            android:textAlignment="center"
+            android:textAppearance="@style/calc_typo"
+            tools:layout_editor_absoluteX="220dp"
+            tools:layout_editor_absoluteY="417dp" />
+
+        <TextView
+            android:id="@+id/calc_2_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/keypad_press"
+            android:onClick="calcClick"
+            android:text="2"
+            android:textAlignment="center"
+            android:textAppearance="@style/calc_typo"
+            tools:layout_editor_absoluteX="110dp"
+            tools:layout_editor_absoluteY="417dp" />
+
+        <TextView
+            android:id="@+id/calc_1_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:autoText="false"
+            android:background="@drawable/keypad_press"
+            android:onClick="calcClick"
+            android:text="1"
+            android:textAlignment="center"
+            android:textAppearance="@style/calc_typo"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="417dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/calc_6_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/keypad_press"
+            android:onClick="calcClick"
+            android:text="6"
+            android:textAlignment="center"
+            android:textAppearance="@style/calc_typo"
+            tools:layout_editor_absoluteX="220dp"
+            tools:layout_editor_absoluteY="455dp" />
+
+        <TextView
+            android:id="@+id/calc_5_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/keypad_press"
+            android:onClick="calcClick"
+            android:text="5"
+            android:textAlignment="center"
+            android:textAppearance="@style/calc_typo"
+            tools:layout_editor_absoluteX="110dp"
+            tools:layout_editor_absoluteY="455dp" />
+
+        <TextView
+            android:id="@+id/calc_4_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/keypad_press"
+            android:onClick="calcClick"
+            android:text="4"
+            android:textAlignment="center"
+            android:textAppearance="@style/calc_typo"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="455dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/calc_9_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/keypad_press"
+            android:onClick="calcClick"
+            android:text="9"
+            android:textAlignment="center"
+            android:textAppearance="@style/calc_typo"
+            tools:layout_editor_absoluteX="220dp"
+            tools:layout_editor_absoluteY="493dp" />
+
+        <TextView
+            android:id="@+id/calc_8_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/keypad_press"
+            android:onClick="calcClick"
+            android:text="8"
+            android:textAlignment="center"
+            android:textAppearance="@style/calc_typo"
+            tools:layout_editor_absoluteX="110dp"
+            tools:layout_editor_absoluteY="493dp" />
+
+        <TextView
+            android:id="@+id/calc_7_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/keypad_press"
+            android:onClick="calcClick"
+            android:text="7"
+            android:textAlignment="center"
+            android:textAppearance="@style/calc_typo"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="493dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/calc_right_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/keypad_press"
+            android:onClick="nextField"
+            android:text="@string/next"
+            android:textAlignment="center"
+            android:textAppearance="@style/calc_typo"
+            tools:layout_editor_absoluteX="220dp"
+            tools:layout_editor_absoluteY="531dp" />
+
+        <TextView
+            android:id="@+id/calc_0_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/keypad_press"
+            android:onClick="calcClick"
+            android:text="0"
+            android:textAlignment="center"
+            android:textAppearance="@style/calc_typo"
+            tools:layout_editor_absoluteX="110dp"
+            tools:layout_editor_absoluteY="531dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/calc_left_minus_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/keypad_press"
+                android:onClick="calcClick"
+                android:text="-"
+                android:textAlignment="center"
+                android:textAppearance="@style/calc_typo"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="531dp" />
+
+            <TextView
+                android:id="@+id/calc_left_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/keypad_press"
+                android:onClick="calcClick"
+                android:text="C"
+                android:textAlignment="center"
+                android:textAppearance="@style/calc_typo"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="531dp" />
+        </LinearLayout>
+    </TableRow>
+</TableLayout>
